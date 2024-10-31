@@ -1,0 +1,184 @@
+// $color-1 : #cdb4db ; // Mobile
+// $color-2 : #fff1e6 ; // Tablet
+// $color-3 : #52b788 ; // Laptop
+// $color-4 : #bee1e6 ; // Desktop
+
+
+// $mobile  : 576px;
+// $tablet  : 768px;
+// $laptop  : 992px;
+// $desktop : 1200px;
+
+
+
+
+*{
+
+margin: 0px 5px;
+padding: 0px;
+box-sizing: border-box;
+
+
+body{
+font-family: sans-serif;
+
+
+}
+
+}
+
+
+
+
+#size{
+
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translateX(-50%);
+font-size: 35px;
+color: red;
+}
+
+
+.container{
+   height: 100vh;
+}
+
+.header {
+height: 10%;
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+    .header_logo {
+font-size: 4vw;
+
+    }
+     
+    
+.header_menu {
+display: flex;
+flex-direction: row;
+font-size: 2.5vw;
+gap: 15px;
+    }
+
+
+.main{
+// border: 2px solid black;
+ height: 80%;
+ display: flex;
+ flex-direction: row;
+}
+.main_image{
+background-image: url("./project2_images/Portrait.png");
+width: 50%;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: left center;
+// border: 2px solid red;
+ }
+
+ .main_text{
+  width: 50%;
+//   border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+ }
+
+ .main_text-1{
+    font-size: 10vw;
+ }
+
+ .main_text-2, .main_text-3, .main_text-4{
+    font-size: 5vw;
+ }
+
+
+.footer{
+height: 10%;
+display: flex;
+align-items: center;
+gap: 20px;
+justify-content: flex-end;
+margin-right: 10%;
+flex-direction: row;
+[class ^="footer_"]{
+    img{
+        width: 5.3vw;
+    }
+}
+
+}
+
+
+
+@media (max-width: 650px) {
+
+   .header {
+     justify-content: center;
+    }
+  
+    .header_menu {
+      display: none;
+    }
+
+    .header_logo {
+
+        font-size: 40px;
+   
+       }
+  
+  
+
+  
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    
+ .main_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: 100%;
+    background-position: center;
+ }
+
+ .main_text {
+    width: 100%;
+
+ }
+
+ .main_text-1 {
+    display: none;
+ }
+
+ .main_text-2, .main_text-3, .main_text-4 {
+    font-size: 30px;
+ }
+
+ .footer {
+    justify-content: center;
+    margin: 0px;
+    [class^="footer__ "] {
+        img {
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+
+}
+
+
+
+
+
